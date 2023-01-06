@@ -1,3 +1,1 @@
-import toml
-
-__version__ = "1.2.3"
+from app_name._version import __version__
