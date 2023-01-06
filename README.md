@@ -1,3 +1,16 @@
+# Template para Aplicações em Python
+Esse repositório é um compilado de tudo que costumo usar quando vou construir um app em Python. É um projeto bastante pessoal e basicamente tem as seguintes características
+
+- No final, a aplicação deve ser instalável com o PyPI
+- Automatização dos uploads no servidor remoto do PyPI
+- Automatização da geração da documentação com Sphinx
+
+### To-Do List
+Alguns pontos que precisam de melhorias e algumas ideias a serem implementadas
+1. Automatizar o upload da documentação para algum servidor estático remoto (como AWS S3, por exemplo) 
+2. Implementar um instalador desse template, tal como o instalador do coockiecutter. (Como é de difícil manutenção, esperar por algum colaborador) 
+
+
 ## Modificações
 
 1. Altere o nome da pasta `emdemor_app_template` para o nome do seu App e desenvolva seu código ali. Vou citar como exemplo um app fictício `emmapp`.
