@@ -1,5 +1,6 @@
 import click
 from app_name.utils import saudation
+from app_name.mymodule.hello import say_hello
 
 @click.command()
 @click.option(
@@ -16,6 +17,8 @@ from app_name.utils import saudation
 )
 def main(arg, b):
     """ Main function"""
+
+    say_hello()
 
     print(b)
 
