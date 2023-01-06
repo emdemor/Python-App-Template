@@ -1,4 +1,4 @@
-name: app_name # Change app_name 
+name: emdemor_app_template # Change app_name 
 channels:
   - conda-forge
   - defaults

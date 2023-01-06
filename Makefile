@@ -1,11 +1,23 @@
 build:
-	pip install -e .
+	pip install build
+	pip install twine
+	python -m build
+	python -m twine upload dist/*
+	$(MAKE) doc
+	$(MAKE) clear
 
+test-build:
+	pip install -e .
+	$(MAKE) doc
+	$(MAKE) clear
+
+doc:
+	bash scripts/build.sh
+
+clear:
 #                                Change app_name below
-	rm -rf app_name.egg-info
- 
-clean:
-#                                Change app_name below
-	rm -rf app_name.egg-info
+	rm -rf emdemor_app_template.egg-info
+	rm -rf dist
 	
-	pip uninstall app_template -y
+uninstall:
+	pip uninstall emdemor_app_template -y
