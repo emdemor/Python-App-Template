@@ -1,4 +1,40 @@
-## Gerar Documentação
+## Modificações
+
+1. Altere o nome da pasta `emdemor_app_template` para o nome do seu App e desenvolva seu código ali. Vou citar como exemplo um app fictício `emmapp`.
+
+2. No arquivo `environment.yml` altere o nome do ambiente conda para o que seja de maior conveniência. Por exemplo, pode-se usar `emmapp`.
+
+3. Configure o arquivo `LICENSE` de acordo com a licensa que escolher.
+
+4. No arquivo Makefile, substitua `emdemor_app_template` nas linhas 19 e 24 (dentro das regras clear e uninstall) para o nome de seu app (no nosso caso, `emmapp`)
+
+5. No arquivo `pyproject.toml`, Substitua `emdemor_app_template` pelo nome de seu app nas linhas 6 (campo "name" dentro de [project]), 28 (campo "version" dentro de [tool.setuptools.dynamic]) e 32 (campo onde você define o comando para rodar o app. Escolha o comando que deseja usar.)
+
+6. No arquivo `docs/source/conf.py`, substitua o app name nas linhas 9 (dentro do `sys.path.insert`) e 14 (nome do projeto). Aproveite para configurar as informações de autor e data.
+
+7. Escreva a introdução da sua documentação no arquivo `docs/source/intro.rst`
+
+8. Para cada modulo na pasta `emmapp` (no seu caso, será o nome de seu app), crie uma arquivo tipo RST dentro de `_files/_modules` com o nome do modulo. Por exemplo, para o módulo `emmapp.utils`, deve-se criar o arquivo `_files/_modules/utils.rst`. Dentro, deverá ter o seguinte código
+```
+{{nome do modulo}}
+===================
+
+.. automodule:: {{nome do modulo}}
+   :members:
+```
+
+9. Para cada submodulo na pasta `emmapp` (no seu caso, será o nome de seu app), crie uma pasta dentro de `_files/_modules` com o nome do modulo e um arquivo tipo RST dentro dessa pasta para cada submodulo. Por exemplo, para do módulo `emmapp/mymodule/hello`, deve-se criar a pasta `_files/_modules/mymodule`, e dentro, o arquivo `_files/_modules/mymodule/hello.rst`. Nesse arquivo, deverá ter o seguinte código
+```
+{{nome do submodulo}}
+===================
+
+.. automodule:: {{nome do modulo}}.{{nome do submodulo}}
+   :members:
+```
+
+10. Dentro de `_files/_usage`, edite o arquivo `getting_started.rst` e quaisquer outros arquivos que adicionar. Lembre-se que para cada arquivo novo em `docs/source/_files/_usage`, deve-se também referenciá-lo em  `docs/source/usage.rst`
+
+## Detalhes sobre a documentação
 
 1. Instale sphinx
 

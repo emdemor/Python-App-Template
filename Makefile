@@ -16,8 +16,9 @@ doc:
 
 clear:
 #                                Change app_name below
-	rm -rf emdemor_app_template.egg-info
+	rm -rf emmapp.egg-info
 	rm -rf dist
 	
 uninstall:
-	pip uninstall emdemor_app_template -y
+#                                Change app_name below
+	pip uninstall emmapp -y

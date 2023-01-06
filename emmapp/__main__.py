@@ -1,6 +1,6 @@
 import click
-from emdemor_app_template.utils import saudation
-from emdemor_app_template.mymodule.hello import say_hello
+from emmapp.utils import saudation
+from emmapp.mymodule.hello import say_hello
 
 @click.command()
 @click.option(

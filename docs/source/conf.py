@@ -6,12 +6,12 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../app_name"))
+sys.path.insert(0, os.path.abspath("../../emmapp")) # Change app_name
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'App Name'
+project = 'EMM App' # Change app_name
 copyright = '2023, Eduardo Morais'
 author = 'Eduardo Morais'
 release = '2023'

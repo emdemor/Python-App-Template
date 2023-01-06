@@ -6,4 +6,4 @@ Usage
    :caption: Content:
 
    _files/_usage/getting_started.rst
-   _files/_usage/monitoring_rate.rst
+   _files/_usage/complementary_info.rst
