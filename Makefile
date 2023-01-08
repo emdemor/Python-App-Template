@@ -22,3 +22,11 @@ clear:
 uninstall:
 #                                Change app_name below
 	pip uninstall emdemor_app_template -y
+
+env-create:
+#                                Change app_name below
+	conda env create -n emdemor_app_template --file environment.yml
+
+env-clear:
+#                                Change app_name below
+	conda env remove -n emdemor_app_template
