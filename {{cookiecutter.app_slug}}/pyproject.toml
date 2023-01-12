@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "emdemor_app_template" # Change app_name
+name = "{{cookiecutter.app_slug}}"
 description = "Um template para começar o desenvolvimento de apps"
 readme = "README.md"
 authors = [
-    { name = "Eduardo", email = "emdemor415@gmail.com.br" }
+    { name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}" }
 ]
 license = { file = "LICENSE" }
 classifiers = [
@@ -24,9 +24,12 @@ keywords = ["template", "app"]
 requires-python = ">=3.9"
 dynamic = ["dependencies", "version"]
 
+[tool.setuptools]
+packages = ["{{cookiecutter.app_slug}}"]
+
 [tool.setuptools.dynamic]
-version = {attr = "emdemor_app_template.__version__"}  # Change app_name
+version = {attr = "{{cookiecutter.app_slug}}.__version__"}
 dependencies = {file = ["requirements.txt"]}
 
 [project.scripts]
-emdemor_app_template_cli = "emdemor_app_template.__main__:main" # Change app_name
+{{cookiecutter.app_slug}} = "{{cookiecutter.app_slug}}.__main__:main"

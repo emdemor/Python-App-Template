@@ -1,0 +1,9 @@
+{
+    "app_name": "Application Name",
+    "app_slug": "{{ cookiecutter.app_name.lower().replace(' ', '_') }}",
+    "app_version": "0.0.0",
+    "author_name": "A. U. Thor",
+    "author_email": "author@email.com",
+    "description": "",
+    "year": "2023"
+}

@@ -6,15 +6,15 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../emdemor_app_template")) # Change app_name
+sys.path.insert(0, os.path.abspath("../../{{cookiecutter.app_slug}}")) # Change app_name
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'EMdeMor App Template' # Change app_name
-copyright = '2023, Eduardo Morais'
-author = 'Eduardo Morais'
-release = '2023'
+project = '{{cookiecutter.app_name}}' # Change app_name
+copyright = '{{cookiecutter.year}}, {{cookiecutter.author_name}}'
+author = '{{cookiecutter.author_name}}'
+release = '{{cookiecutter.year}}'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
