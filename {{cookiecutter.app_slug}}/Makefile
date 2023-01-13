@@ -1,7 +1,6 @@
 build:
 	bumpversion build
 	pip install build
-	pip install twine
 	python -m build
 	$(MAKE) doc
 
@@ -9,9 +8,7 @@ release:
 	bumpversion release --tag
 	pip install build
 	python -m build
-	$(MAKE) pypi
 	$(MAKE) doc
-	$(MAKE) clear
 
 pypi:
 	pip install twine
