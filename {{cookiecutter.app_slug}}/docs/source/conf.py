@@ -15,6 +15,8 @@ project = '{{cookiecutter.app_name}}' # Change app_name
 copyright = '{{cookiecutter.year}}, {{cookiecutter.author_name}}'
 author = '{{cookiecutter.author_name}}'
 release = '{{cookiecutter.year}}'
+version = "{{cookiecutter.app_version}}"
+
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
