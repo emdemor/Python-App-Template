@@ -1,9 +1,7 @@
 {
-    "app_name": "Application Name",
-    "app_slug": "{{ cookiecutter.app_name.lower().replace(' ', '_') }}",
+    "project_name": "default_name",
     "app_version": "0.0.0",
     "author_name": "A. U. Thor",
     "author_email": "author@email.com",
-    "description": "",
-    "year": "2023"
+    "description": ""
 }
